@@ -29,6 +29,6 @@ spring:
                 min-idle: 0
                 max-idle: 8
                 max-active: 8
-            port: 6379
-            host: localhost
+        port: 6379
+        host: localhost
 ```
