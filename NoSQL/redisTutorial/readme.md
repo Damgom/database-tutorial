@@ -32,3 +32,12 @@ spring:
         port: 6379
         host: localhost
 ```
+
+## 간단한 회원가입 로직을 추가하고 회원가입 진행
+![image](https://user-images.githubusercontent.com/104135990/218467976-f6e5cc3b-fc33-44a6-8078-a615d65ca812.png)
+
+## 회원이름으로 조회했을 때 key(id)값을 잘 읽어오는지 확인
+![image](https://user-images.githubusercontent.com/104135990/218468145-43ca14ba-1c83-4c97-b5b1-32b9504df337.png)
+
+## 회원가입을 2번 진행하고 key값의 개수를 확인
+![image](https://user-images.githubusercontent.com/104135990/218468468-b6b3471c-3e00-4288-a7a0-73dae7bb6ff9.png)
