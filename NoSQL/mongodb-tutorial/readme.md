@@ -81,7 +81,42 @@ collection 목 확인
 용량확인
 > use [dbname]
 > db.stats()
+
+Document
+- find()
+> db.{collectionName}.find({query}, {projection})
+ex. db.member.find().pretty()
+    db.member.find({title:"test"},{_id:0,title:1,tag:1})
 ```
 ## UPDATE
 
+```
+> db.[collection].update(
+  [query],
+  [update],
+  {
+   upsert: [boolean], # true 일 때, query에 매칭되는 document가 없으면 새로 insert 
+   multi: [boolean],  # false 일 때, 하나만 update
+   writeConcern: [document]
+  }
+)
+```
 ## DELETE
+```
+DB
+> db.dropDatabase();
+db 삭제
+
+Collection
+db.{collection}.drop()
+
+Document
+> db.{collection}.remove(
+  [query],
+  {
+    justOne: [boolean],
+    writeConcern: [document]
+  }
+)
+
+```
