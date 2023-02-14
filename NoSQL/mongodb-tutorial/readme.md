@@ -120,3 +120,11 @@ Document
 )
 
 ```
+
+## 회원가입 진행
+![image](https://user-images.githubusercontent.com/104135990/218728437-c522cc2b-4ee3-48d0-a73a-810a13284462.png)
+
+## 회원을 이름으로 조회
+
+![image](https://user-images.githubusercontent.com/104135990/218728680-b312b9c3-98d7-4558-9cab-76083244b8de.png)
+
