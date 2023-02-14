@@ -41,3 +41,10 @@ spring:
 
 ## 회원가입을 2번 진행하고 key값의 개수를 확인
 ![image](https://user-images.githubusercontent.com/104135990/218468468-b6b3471c-3e00-4288-a7a0-73dae7bb6ff9.png)
+
+
+# 특징
+- Key-value DB
+- 하드디스크에 저장 x, ram에 저장 (속도가 빠르다)
+- 메인DB를 두고 자주 쓰는 데이터들을 redis에 추가로 복사, 그 데이터가 필요한 경우 redis에서 조회한다. (데이터 캐싱)
+- 로그인 기록 저장(access token, refresh token)
