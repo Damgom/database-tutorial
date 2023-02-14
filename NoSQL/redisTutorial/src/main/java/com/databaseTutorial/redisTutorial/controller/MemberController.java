@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/member")
 public class MemberController {
 
-    private final MemberRepository memberRepository;
     private final MemberService memberService;
 
     @PostMapping("/join")
