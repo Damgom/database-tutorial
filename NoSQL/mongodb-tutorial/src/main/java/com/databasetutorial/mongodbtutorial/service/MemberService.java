@@ -31,4 +31,15 @@ public class MemberService {
             return "error";
         }
     }
+
+    public void followMember(String name, String name2) {
+        Member member = findMember(name);
+        Member member2 = findMember(name2);
+        member.getFollower().add(member2.getId());
+        memberRepository.save(member);
+    }
+
+    public Member findMember(String name) {
+        return memberRepository.findByName(name).orElseThrow(() -> new RuntimeException("e"));
+    }
 }
